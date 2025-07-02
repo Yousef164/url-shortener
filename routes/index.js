@@ -27,11 +27,4 @@ router.post('/', (req, res, next)=>
 })
 
 
-router.get('/', (req, res, next)=>{
-  users.find({})
-  .then((result)=>{
-    console.log(result);
-  });
-});
-
 module.exports = router;
