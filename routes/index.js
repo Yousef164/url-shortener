@@ -27,8 +27,8 @@ router.post('/', (req, res, next)=>
 })
 
 
-router.get('/find', (req, res, next)=>{
-  users.find({url: 'https://github.com/cat-backend-nodejs/nodejs-roadmap'})
+router.get('/', (req, res, next)=>{
+  users.find({})
   .then((result)=>{
     console.log(result);
   });
